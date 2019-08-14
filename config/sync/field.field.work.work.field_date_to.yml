@@ -1,0 +1,21 @@
+uuid: 7e119f5e-f4d2-407d-9a4b-22f86ca704f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.work.field_date_to
+  module:
+    - datetime
+    - md_worksheet
+id: work.work.field_date_to
+field_name: field_date_to
+entity_type: work
+bundle: work
+label: 'Date to'
+description: 'Work end date.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

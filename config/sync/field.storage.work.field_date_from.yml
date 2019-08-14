@@ -1,0 +1,20 @@
+uuid: 45e3e9ae-2087-4877-bfef-64773630b5ef
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - md_worksheet
+id: work.field_date_from
+field_name: field_date_from
+entity_type: work
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

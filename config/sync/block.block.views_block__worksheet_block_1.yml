@@ -1,0 +1,30 @@
+uuid: 55c1bda4-ad44-4dc0-ab39-c2f2f236efaf
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.worksheet
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__worksheet_block_1
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:worksheet-block_1'
+settings:
+  id: 'views_block:worksheet-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,44 @@
+uuid: ac63fb4d-f191-40dc-8b36-de82278ac572
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.work.work.field_date_from
+    - field.field.work.work.field_date_to
+    - field.field.work.work.field_solver
+  module:
+    - md_worksheet
+    - text
+id: work.work.default
+targetEntityType: work
+bundle: work
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_solver:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  field_date_from: true
+  field_date_to: true

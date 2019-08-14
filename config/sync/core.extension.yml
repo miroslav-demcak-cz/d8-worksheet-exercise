@@ -4,6 +4,8 @@ module:
   admin_toolbar_tools: 0
   block: 0
   breakpoint: 0
+  contextual: 0
+  datetime: 0
   dblog: 0
   dynamic_page_cache: 0
   field: 0
@@ -15,6 +17,7 @@ module:
   menu_ui: 0
   node: 0
   page_cache: 0
+  quickedit: 0
   system: 0
   text: 0
   toolbar: 0

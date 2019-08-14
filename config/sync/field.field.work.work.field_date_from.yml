@@ -1,0 +1,24 @@
+uuid: 7ee72ac6-9a9e-476d-9309-eae727f227ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.work.field_date_from
+  module:
+    - datetime
+    - md_worksheet
+id: work.work.field_date_from
+field_name: field_date_from
+entity_type: work
+bundle: work
+label: 'Date from'
+description: 'Work start date.'
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

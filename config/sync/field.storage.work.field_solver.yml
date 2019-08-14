@@ -1,0 +1,20 @@
+uuid: 2c7fb096-bbfa-4a4c-b7e9-243b0e4ba532
+langcode: en
+status: true
+dependencies:
+  module:
+    - md_worksheet
+    - user
+id: work.field_solver
+field_name: field_solver
+entity_type: work
+type: entity_reference
+settings:
+  target_type: user
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

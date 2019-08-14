@@ -1,0 +1,30 @@
+uuid: 7e297dd2-800e-48c8-b6ae-e026e6d6b07b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.work.field_solver
+  module:
+    - md_worksheet
+id: work.work.field_solver
+field_name: field_solver
+entity_type: work
+bundle: work
+label: Solver
+description: 'The user who solved the work.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+field_type: entity_reference

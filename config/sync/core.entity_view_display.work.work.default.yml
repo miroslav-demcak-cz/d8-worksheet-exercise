@@ -1,0 +1,59 @@
+uuid: d89a9cc1-2a4b-473e-985c-723b8900523a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.work.work.field_date_from
+    - field.field.work.work.field_date_to
+    - field.field.work.work.field_solver
+  module:
+    - datetime
+    - md_worksheet
+    - text
+id: work.work.default
+targetEntityType: work
+bundle: work
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_date_from:
+    weight: 11
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_date_to:
+    weight: 12
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_solver:
+    weight: 13
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }
