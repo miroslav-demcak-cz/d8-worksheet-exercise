@@ -1,0 +1,14 @@
+uuid: 0ab9152d-22d1-42ce-92ca-23aa4d097933
+name: 'Worksheet (exercise)'
+mail: admin@worksheet-exercise
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /user/login
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
