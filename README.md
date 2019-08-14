@@ -12,3 +12,9 @@ The entire development process is evident from separate commit messages (but fee
 ## Branches
 - Branch **extract** includes mainly files related to assignment to quickly browse my solution (or use some custom installation),
 - in **master** branch are all files (as supposed in [drupal-composer/drupal-project](https://github.com/drupal-composer/drupal-project)) added.
+
+## Installation
+- git clone https://github.com/miroslav-demcak-cz/d8-worksheet-exercise.git <your repository>
+- cd <your directory>
+- composer install
+- drush si --existing-config
