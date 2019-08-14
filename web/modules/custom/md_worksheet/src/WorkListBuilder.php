@@ -98,6 +98,16 @@ class WorkListBuilder extends EntityListBuilder {
    */
   protected function getDefaultOperations(EntityInterface $entity) {
     $operations = parent::getDefaultOperations($entity);
+
+    // Adds "finish" operation.
+    if ($entity->access('update') && $entity->hasLinkTemplate('finish-form')) {
+      $operations['finish'] = [
+        'title' => $this->t('Finish'),
+        'weight' => 20,
+        'url' => $this->ensureDestination($entity->toUrl('finish-form')),
+      ];
+    }
+
     $destination = $this->redirectDestination->getAsArray();
     foreach ($operations as $key => $operation) {
       $operations[$key]['query'] = $destination;

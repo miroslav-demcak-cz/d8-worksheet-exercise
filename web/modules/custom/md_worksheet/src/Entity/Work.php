@@ -22,10 +22,11 @@ use Drupal\md_worksheet\WorkInterface;
  *     "form" = {
  *       "add" = "Drupal\md_worksheet\Form\WorkForm",
  *       "edit" = "Drupal\md_worksheet\Form\WorkForm",
- *       "delete" = "Drupal\Core\Entity\ContentEntityDeleteForm"
+ *       "delete" = "Drupal\Core\Entity\ContentEntityDeleteForm",
+ *       "finish" = "Drupal\md_worksheet\Form\WorkFinishForm"
  *     },
  *     "route_provider" = {
- *       "html" = "Drupal\Core\Entity\Routing\AdminHtmlRouteProvider",
+ *       "html" = "Drupal\md_worksheet\Entity\Routing\WorkAdminHtmlRouteProvider"
  *     }
  *   },
  *   base_table = "work",
@@ -40,7 +41,8 @@ use Drupal\md_worksheet\WorkInterface;
  *     "canonical" = "/work/{work}",
  *     "edit-form" = "/admin/content/work/{work}/edit",
  *     "delete-form" = "/admin/content/work/{work}/delete",
- *     "collection" = "/admin/content/work"
+ *     "collection" = "/admin/content/work",
+ *     "finish-form" = "/admin/content/work/{work}/finish"
  *   },
  *   field_ui_base_route = "entity.work.settings"
  * )
@@ -59,6 +61,21 @@ class Work extends ContentEntityBase implements WorkInterface {
    */
   public function setTitle($title) {
     $this->set('title', $title);
+    return $this;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function getDateTo() {
+    return $this->get('field_date_to')->value;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function finish() {
+    $this->set('field_date_to', gmdate('Y-m-d'));
     return $this;
   }
 

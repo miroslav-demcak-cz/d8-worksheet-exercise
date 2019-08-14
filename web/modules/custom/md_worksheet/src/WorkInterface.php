@@ -28,4 +28,20 @@ interface WorkInterface extends ContentEntityInterface {
    */
   public function setTitle($title);
 
+  /**
+   * Gets the "Date to" value.
+   *
+   * @return string
+   *   Date to.
+   */
+  public function getDateTo();
+
+  /**
+   * Sets the "Date to" field with current date.
+   *
+   * @return \Drupal\md_worksheet\WorkInterface
+   *   WorkInterface.
+   */
+  public function finish();
+
 }

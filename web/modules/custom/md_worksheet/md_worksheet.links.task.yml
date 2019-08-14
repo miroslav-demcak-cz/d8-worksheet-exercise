@@ -10,6 +10,10 @@ entity.work.edit_form:
   title: Edit
   route_name: entity.work.edit_form
   base_route: entity.work.canonical
+entity.work.finish_form:
+  title: Finish
+  route_name: entity.work.finish_form
+  base_route: entity.work.canonical
 entity.work.delete_form:
   title: Delete
   route_name: entity.work.delete_form

@@ -1,6 +1,6 @@
 name: MD Worksheet
 type: module
-description: 'Provides a work entity.'
+description: 'Provides a work entity with custom operation to finish the work and integration with Views.'
 package: Custom
 core: 8.x
 dependencies:
