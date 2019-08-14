@@ -14,7 +14,7 @@ The entire development process is evident from separate commit messages (but fee
 - in **master** branch are all files (as supposed in [drupal-composer/drupal-project](https://github.com/drupal-composer/drupal-project)) added.
 
 ## Installation
-- git clone https://github.com/miroslav-demcak-cz/d8-worksheet-exercise.git <your repository>
-- cd <your directory>
+- git clone https://github.com/miroslav-demcak-cz/d8-worksheet-exercise.git _your-directory_
+- cd _your-directory_
 - composer install
 - drush si --existing-config
