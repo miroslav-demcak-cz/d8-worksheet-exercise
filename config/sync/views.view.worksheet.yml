@@ -384,6 +384,8 @@ display:
           absolute: false
           entity_type: work
           plugin_id: entity_link
+          views_field_permissions:
+            perm: 'view work'
         edit_work:
           id: edit_work
           table: work
@@ -437,6 +439,8 @@ display:
           absolute: false
           entity_type: work
           plugin_id: entity_link_edit
+          views_field_permissions:
+            perm: 'edit work'
         md_worksheet_finish_work_link:
           id: md_worksheet_finish_work_link
           table: work
@@ -487,6 +491,8 @@ display:
           hide_alter_empty: true
           entity_type: work
           plugin_id: md_worksheet_finish_work_link
+          views_field_permissions:
+            perm: 'edit work'
       filters: {  }
       sorts: {  }
       title: Worksheet
