@@ -9,12 +9,10 @@ It is based on [drupal-composer/drupal-project](https://github.com/drupal-compos
 
 The entire development process is evident from separate commit messages (but feel free to ask anything).
 
-## Branches
-- Branch **extract** includes mainly files related to assignment to quickly browse my solution (or use some custom installation),
-- in **master** branch are all files (as supposed in [drupal-composer/drupal-project](https://github.com/drupal-composer/drupal-project)) added.
-
 ## Installation
-- git clone https://github.com/miroslav-demcak-cz/d8-worksheet-exercise.git _your-directory_
-- cd _your-directory_
-- composer install
-- drush si --existing-config
+```
+git clone https://github.com/miroslav-demcak-cz/d8-worksheet-exercise.git _your-directory_
+cd _your-directory_
+composer install
+drush si --existing-config
+```
