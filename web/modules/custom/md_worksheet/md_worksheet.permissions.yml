@@ -1,0 +1,13 @@
+administer work:
+  title: 'Administer work settings'
+  restrict access: true
+access work overview:
+  title: 'Access work overview page'
+delete work:
+  title: Delete work
+create work:
+  title: Create work
+view work:
+  title: View work
+edit work:
+  title: Edit work

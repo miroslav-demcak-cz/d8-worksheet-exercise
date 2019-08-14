@@ -1,0 +1,8 @@
+name: MD Worksheet
+type: module
+description: 'Provides a work entity.'
+package: Custom
+core: 8.x
+dependencies:
+  - drupal:text
+configure: entity.work.settings

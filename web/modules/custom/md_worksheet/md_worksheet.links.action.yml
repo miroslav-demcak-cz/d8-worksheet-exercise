@@ -1,0 +1,5 @@
+work.add_form:
+  route_name: entity.work.add_form
+  title: 'Add work'
+  appears_on:
+    - entity.work.collection

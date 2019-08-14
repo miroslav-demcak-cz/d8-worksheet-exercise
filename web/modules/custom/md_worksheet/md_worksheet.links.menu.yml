@@ -1,0 +1,10 @@
+entity.work.settings:
+  title: Work
+  description: Configure a Work entity type
+  route_name:  entity.work.settings
+  parent: system.admin_structure
+entity.work.collection:
+  title: Works
+  description: List of works
+  route_name: entity.work.collection
+  parent: system.admin_content

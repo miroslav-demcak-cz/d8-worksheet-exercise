@@ -1,0 +1,7 @@
+entity.work.settings:
+  path: 'admin/structure/work'
+  defaults:
+    _form: '\Drupal\md_worksheet\Form\WorkSettingsForm'
+    _title: 'Work'
+  requirements:
+    _permission: 'administer work'
