@@ -1,5 +1,7 @@
 # Worksheet (exercise)
 
+Note: The project is archived, it only serves as a read-only sample.
+
 This is Drupal 8 project with custom module to provide:
 - Custom content entity representing a work with title, description, solver and dates of the start and the end,
 - view (block) named Worksheet at homepage,
